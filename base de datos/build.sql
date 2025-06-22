@@ -8,8 +8,7 @@ CREATE
 DATABASE "hospital";
 
 BEGIN;
-\c
-hospital
+\c hospital
 \i create.sql
 \i data.sql
 COMMIT;
