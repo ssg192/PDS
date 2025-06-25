@@ -1,3 +1,4 @@
+SET client_encoding TO 'UTF8';
 -- 1) Catálogo de estado de paciente (3 filas)
 INSERT INTO th01_cat_estado_paciente (nombre_estado)
 VALUES ('Activo'),
