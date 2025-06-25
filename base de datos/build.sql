@@ -4,13 +4,8 @@ WHERE datname = 'hospital';
 
 DROP
 DATABASE IF EXISTS "hospital";
-
-CREATE DATABASE hospital
-    WITH ENCODING 'UTF8'
-    LC_COLLATE='es_MX.utf8'
-    LC_CTYPE='es_MX.utf8'
-    TEMPLATE=template0;
-
+CREATE
+DATABASE "hospital";
 BEGIN;
 \c hospital
 \i create.sql
