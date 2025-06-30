@@ -69,6 +69,14 @@ export interface CrearCitaRequest {
   idPaciente: number;
 }
 
+export interface ActualizarCitaRequest {
+  id: number;
+  idFecha: number;
+  idHospital: number;
+  idMedico: number;
+  idPaciente: number;
+}
+
 // Servicios para Pacientes
 export const pacienteService = {
   getAll: () => api.get<Paciente[]>('/api/pacientes'),
@@ -123,6 +131,10 @@ export const pacienteCatalogoService = {
 
 export const crearCitaService = {
   crear: (data: CrearCitaRequest) => api.post('/Inicio/crear', data),
+};
+
+export const actualizarCitaService = {
+  actualizar: (data: ActualizarCitaRequest) => api.put('/Inicio/actualizar', data),
 };
 
 export default api;

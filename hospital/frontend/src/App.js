@@ -7,6 +7,7 @@ import Medicos from './pages/Medicos.tsx';
 import Hospitales from './pages/Hospitales.tsx';
 import Citas from './pages/Citas.tsx';
 import FormularioCita from './pages/FormularioCita.tsx'; // Nueva importación
+import ActualizarCita from './pages/ActualizarCita.tsx';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="hospitales" element={<Hospitales />} />
           <Route path="citas" element={<Citas />} />
           <Route path="crear-cita" element={<FormularioCita />} /> {/* Nueva ruta */}
+          <Route path="actualizar-cita" element={<ActualizarCita />} />
         </Route>
       </Routes>
     </Router>
